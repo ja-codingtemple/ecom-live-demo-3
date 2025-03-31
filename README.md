@@ -16,6 +16,6 @@ As we render the ProductItem component, we pass each individual product to it. I
 2. Open terminal.
 3. Type ``npm install`` to install your dependencies from ``package.json`` (this creates the ``node_modules`` folder)
 4. Type ``npm run dev`` to run the project.
-5. Ctrl + Click the link that appears in the terminal (it should look something like this: ``http://localhost:5174/``
+5. Ctrl + click the link that appears in the terminal (it should look something like this: ``http://localhost:5174/``
 
 If step 4 does not work and you get an error, try this command instead: ``.\node_modules\.bin\vite``
