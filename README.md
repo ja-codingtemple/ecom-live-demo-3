@@ -1,12 +1,10 @@
-# React + Vite
+# Advanced JS & Intro to React (Starter Code)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+There are three components that make this application work:
+- App.jsx
+- ProductList.jsx
+- ProductItem.jsx
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+In App.jsx we are creating an array of products and storing it via the useState hook. We are then passing that array of products to our ProductList component, which we are rendering once.
+In our ProductList component we are using JavaScript's map() function to access each item in our list of products one at a time, and for each product we're rendering a ProductItem component.
+As we render the ProductItem component, we pass each individual product to it. Inside of ProductItem we render each product's individual properties: Name, price, description.
